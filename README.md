@@ -146,7 +146,7 @@ open mandelbrot.png
 
 ## Performance
 
-Benchmarks were run on an **Apple M5** system with gawk version 20200816
+Benchmarks were run on an **Apple M5** system with GNU bash, version 3.2.57(1)-release (arm64-apple-darwin25)
 
 **Generating a 1000x750 data file:**
 
