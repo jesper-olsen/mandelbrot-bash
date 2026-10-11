@@ -141,7 +141,7 @@ To create a high-resolution PNG, you first generate a data file and then process
 
 
 ```sh
-./mandelbrot.bash width=1000 height=750 png=1>image.txt
+./mandelbrot.bash width=1000 height=750 png=1 > image.txt
 gnuplot topng.gp
 open mandelbrot.png
 ```
