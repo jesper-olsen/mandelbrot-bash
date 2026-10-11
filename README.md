@@ -53,7 +53,7 @@ The scripts can be configured via command-line arguments using a `key=value` for
 
 ### 1. ASCII Art Output
 
-To render the Mandelbrot set directly in your terminal, run the executable.
+To render the Mandelbrot set directly in your terminal, run one of the scripts (.bash, .zsh, .ksh):
 
 ```sh
 ./mandelbrot.zsh width=100 height=75
@@ -160,34 +160,35 @@ Benchmarks were run on an **Apple M5** system with:
 
 **Generating a 1000x750 data file:**
 
-### Bash 3.2
+Bash 3.2
 
 ```sh
 time bash32 mandelbrot.bash width=1000 height=750 png=1 > image.txt  
 599.40s user 27.98s system 98% cpu 10:34.33 total
 ```
 
-### Bash 5.3
+Bash 5.3
 
 ```sh
 time bash53 mandelbrot.bash width=1000 height=750 png=1 > image.txt
 296.96s user 1.52s system 99% cpu 5:00.88 total
 ```
 
-### Zsh
+Zsh
+
 ```sh
 time ./mandelbrot.zsh width=1000 height=750 png=1 > image.txt
 74.59s user 2.30s system 97% cpu 1:18.89 total
 ```
 
-### Old AT&T Ksh
+Old AT&T Ksh
 
 ```sh
 time ./mandelbrot.ksh width=1000 height=750 png=1 > image.txt
 38.88s user 0.47s system 94% cpu 41.470 total
 ```
 
-### Ksh93
+Ksh93
 
 ```sh
 time ksh93 mandelbrot.ksh width=1000 height=750 png=1 > image.txt
@@ -196,21 +197,21 @@ time ksh93 mandelbrot.ksh width=1000 height=750 png=1 > image.txt
 
 **Generating a 5000x5000 data file:**
 
-### Bash 5.3
+Bash 5.3
 
 ```sh
 time bash53 mandelbrot.bash width=5000 height=5000 png=1 > image.txt  
 10027.70s user 37.41s system 98% cpu 2:49:47.26 total
 ```
 
-### Zsh
+Zsh
 
 ```sh
 time ./mandelbrot.zsh width=5000 height=5000 png=1 > image.txt  
 2578.77s user 73.09s system 98% cpu 44:43.58 total
 ```
 
-### Ksh93
+Ksh93
 
 ```sh
 time ksh93 ./mandelbrot.ksh width=5000 height=5000 png=1 > image.txt
